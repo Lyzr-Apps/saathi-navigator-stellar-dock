@@ -1,0 +1,123 @@
+{
+  "agent_name": "Impact Saathi Agent",
+  "agent_id": "6985a9d6301c62c7ca2c7e40",
+  "agent_purpose": "bilingual_summit_assistant",
+  "description": "Bilingual assistant for India AI Summit 2026 handling session discovery, calendar management, note-taking, venue navigation, and image analysis with Hindi/English support",
+  "response_schema": {
+    "status": "string",
+    "result": {
+      "message": "string",
+      "sessions": [
+        {
+          "title": "string",
+          "time": "string",
+          "venue": "string",
+          "track": "string",
+          "speakers": "string"
+        }
+      ],
+      "calendar_events": [
+        "any"
+      ],
+      "conflicts": [
+        "any"
+      ],
+      "notes": [
+        "any"
+      ],
+      "venue_directions": {
+        "location": "string",
+        "floor": "string",
+        "directions": "string",
+        "landmarks": "string",
+        "estimated_time": "string"
+      },
+      "action_prompt": "string"
+    },
+    "metadata": {
+      "agent_name": "string",
+      "timestamp": "string",
+      "language": "string"
+    }
+  },
+  "example_response": {
+    "status": "success",
+    "result": {
+      "message": "\u092f\u0939\u093e\u0901 AI Healthcare \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u0938\u0947\u0936\u0928 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0939\u0948:",
+      "sessions": [
+        {
+          "title": "AI in Healthcare: Transforming Patient Care",
+          "time": "February 17, 2026, 10:00 AM - 11:00 AM",
+          "venue": "Hall A, Ground Floor",
+          "track": "Healthcare Innovations",
+          "speakers": "Dr. A. Sharma, Prof. N. Kumar"
+        },
+        {
+          "title": "Future of AI in Medicine",
+          "time": "February 18, 2026, 2:00 PM - 3:30 PM",
+          "venue": "Conference Room B, First Floor",
+          "track": "AI and Medicine",
+          "speakers": "Dr. R. Verma, Dr. M. Singh"
+        }
+      ],
+      "calendar_events": [],
+      "conflicts": [],
+      "notes": [],
+      "venue_directions": {
+        "location": "",
+        "floor": "",
+        "directions": "",
+        "landmarks": "",
+        "estimated_time": ""
+      },
+      "action_prompt": "\u0915\u094d\u092f\u093e \u0906\u092a \u0907\u0938\u0947 \u0905\u092a\u0928\u0947 \u0915\u0948\u0932\u0947\u0902\u0921\u0930 \u092e\u0947\u0902 \u091c\u094b\u0921\u093c\u0928\u093e \u091a\u093e\u0939\u0947\u0902\u0917\u0947?"
+    },
+    "metadata": {
+      "agent_name": "Impact Saathi Agent",
+      "timestamp": "2026-02-15T10:00:00Z",
+      "language": "hindi"
+    }
+  },
+  "is_actual_tested": true,
+  "test_timestamp": "2026-02-06T08:45:46.191744",
+  "test_message_used": "Hello, provide a sample response",
+  "actual_test_response": {
+    "status": "success",
+    "result": {
+      "message": "\u092f\u0939\u093e\u0901 AI Healthcare \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u0938\u0947\u0936\u0928 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0939\u0948:",
+      "sessions": [
+        {
+          "title": "AI in Healthcare: Transforming Patient Care",
+          "time": "February 17, 2026, 10:00 AM - 11:00 AM",
+          "venue": "Hall A, Ground Floor",
+          "track": "Healthcare Innovations",
+          "speakers": "Dr. A. Sharma, Prof. N. Kumar"
+        },
+        {
+          "title": "Future of AI in Medicine",
+          "time": "February 18, 2026, 2:00 PM - 3:30 PM",
+          "venue": "Conference Room B, First Floor",
+          "track": "AI and Medicine",
+          "speakers": "Dr. R. Verma, Dr. M. Singh"
+        }
+      ],
+      "calendar_events": [],
+      "conflicts": [],
+      "notes": [],
+      "venue_directions": {
+        "location": "",
+        "floor": "",
+        "directions": "",
+        "landmarks": "",
+        "estimated_time": ""
+      },
+      "action_prompt": "\u0915\u094d\u092f\u093e \u0906\u092a \u0907\u0938\u0947 \u0905\u092a\u0928\u0947 \u0915\u0948\u0932\u0947\u0902\u0921\u0930 \u092e\u0947\u0902 \u091c\u094b\u0921\u093c\u0928\u093e \u091a\u093e\u0939\u0947\u0902\u0917\u0947?"
+    },
+    "metadata": {
+      "agent_name": "Impact Saathi Agent",
+      "timestamp": "2026-02-15T10:00:00Z",
+      "language": "hindi"
+    }
+  },
+  "test_passed": true
+}

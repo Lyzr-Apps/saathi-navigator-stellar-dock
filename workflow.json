@@ -1,0 +1,33 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "User Query/Image",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "impact_saathi_agent",
+      "type": "Agent",
+      "label": "Impact Saathi Agent",
+      "nodeCategory": "agent",
+      "agent_id": "6985a9d6301c62c7ca2c7e40"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Response with Session Cards",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "impact_saathi_agent"
+    },
+    {
+      "source": "impact_saathi_agent",
+      "target": "output_node"
+    }
+  ]
+}

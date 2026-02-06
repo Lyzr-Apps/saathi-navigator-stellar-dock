@@ -1,0 +1,48 @@
+{
+  "agent_name": "Impact Saathi Agent",
+  "agent_id": "6985a9d6301c62c7ca2c7e40",
+  "test_message": "\u092e\u0941\u091d\u0947 AI Healthcare \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u0938\u0947\u0936\u0928 \u0926\u093f\u0916\u093e\u0913",
+  "expected_purpose": "assistant",
+  "timestamp": "2026-02-06T08:45:46.191039",
+  "is_valid_json": true,
+  "validation_errors": [],
+  "actual_response": {
+    "status": "success",
+    "result": {
+      "message": "\u092f\u0939\u093e\u0901 AI Healthcare \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u0938\u0947\u0936\u0928 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0939\u0948:",
+      "sessions": [
+        {
+          "title": "AI in Healthcare: Transforming Patient Care",
+          "time": "February 17, 2026, 10:00 AM - 11:00 AM",
+          "venue": "Hall A, Ground Floor",
+          "track": "Healthcare Innovations",
+          "speakers": "Dr. A. Sharma, Prof. N. Kumar"
+        },
+        {
+          "title": "Future of AI in Medicine",
+          "time": "February 18, 2026, 2:00 PM - 3:30 PM",
+          "venue": "Conference Room B, First Floor",
+          "track": "AI and Medicine",
+          "speakers": "Dr. R. Verma, Dr. M. Singh"
+        }
+      ],
+      "calendar_events": [],
+      "conflicts": [],
+      "notes": [],
+      "venue_directions": {
+        "location": "",
+        "floor": "",
+        "directions": "",
+        "landmarks": "",
+        "estimated_time": ""
+      },
+      "action_prompt": "\u0915\u094d\u092f\u093e \u0906\u092a \u0907\u0938\u0947 \u0905\u092a\u0928\u0947 \u0915\u0948\u0932\u0947\u0902\u0921\u0930 \u092e\u0947\u0902 \u091c\u094b\u0921\u093c\u0928\u093e \u091a\u093e\u0939\u0947\u0902\u0917\u0947?"
+    },
+    "metadata": {
+      "agent_name": "Impact Saathi Agent",
+      "timestamp": "2026-02-15T10:00:00Z",
+      "language": "hindi"
+    }
+  },
+  "raw_response": "{\n  \"status\": \"success\",\n  \"result\": {\n    \"message\": \"\u092f\u0939\u093e\u0901 AI Healthcare \u0915\u0947 \u092c\u093e\u0930\u0947 \u092e\u0947\u0902 \u0938\u0947\u0936\u0928 \u0915\u0940 \u091c\u093e\u0928\u0915\u093e\u0930\u0940 \u0939\u0948:\",\n    \"sessions\": [\n      {\n        \"title\": \"AI in Healthcare: Transforming Patient Care\",\n        \"time\": \"February 17, 2026, 10:00 AM - 11:00 AM\",\n        \"venue\": \"Hall A, Ground Floor\",\n        \"track\": \"Healthcare Innovations\",\n        \"speakers\": \"Dr. A. Sharma, Prof. N. Kumar\"\n      },\n      {\n        \"title\": \"Future of AI in Medicine\",\n        \"time\": \"February 18, 2026, 2:00 PM - 3:30 PM\",\n        \"venue\": \"Conference Room B, First Floor\",\n        \"track\": \"AI and Medicine\",\n        \"speakers\": \"Dr. R. Verma, Dr. M. Singh\"\n      }\n    ],\n    \"calendar_events\": [],\n    \"conflicts\": [],\n    \"notes\": [],\n    \"venue_directions\": {\n      \"location\": \"\",\n      \"floor\": \"\",\n      \"directions\": \"\",\n      \"landmarks\": \"\",\n      \"estimated_time\": \"\"\n    },\n    \"action_prompt\": \"\u0915\u094d\u092f\u093e \u0906\u092a \u0907\u0938\u0947 \u0905\u092a\u0928\u0947 \u0915\u0948\u0932\u0947\u0902\u0921\u0930 \u092e\u0947\u0902 \u091c\u094b\u0921\u093c\u0928\u093e \u091a\u093e\u0939\u0947\u0902\u0917\u0947?\"\n  },\n  \"metadata\": {\n    \"agent_name\": \"Impact Saathi Agent\",\n    \"timestamp\": \"2026-02-15T10:00:00Z\",\n    \"language\": \"hindi\"\n  }\n}"
+}

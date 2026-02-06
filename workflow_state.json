@@ -1,0 +1,20 @@
+{
+  "workflow_name": "Impact Saathi - India AI Summit Navigator",
+  "created_at": "2026-02-06T00:00:00Z",
+  "agents": {
+    "impact_saathi_agent": {
+      "agent_id": "6985a9d6301c62c7ca2c7e40",
+      "name": "Impact Saathi Agent",
+      "type": "single_agent_with_knowledge_base",
+      "status": "active",
+      "knowledge_base": {
+        "rag_id": "6985a99bde7de278e55d289b",
+        "rag_name": "impactsaathikbc7bl",
+        "crawl_job_id": "crawl_582483153_922e26e7",
+        "crawl_status": "in_progress"
+      }
+    }
+  },
+  "workflow_pattern": "single_agent",
+  "total_agents": 1
+}
