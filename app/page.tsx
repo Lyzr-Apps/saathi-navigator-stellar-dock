@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import { callAIAgent, uploadFiles } from '@/lib/aiAgent'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -298,14 +298,34 @@ export default function Home() {
     }
   }
 
+  // Handle input message change
+  const handleInputChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputMessage(e.target.value)
+  }, [])
+
+  // Handle search query change
+  const handleSearchChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(e.target.value)
+  }, [])
+
+  // Handle note title change
+  const handleNoteTitleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setEditNoteTitle(e.target.value)
+  }, [])
+
+  // Handle note content change
+  const handleNoteContentChange = useCallback((e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setEditNoteContent(e.target.value)
+  }, [])
+
   // Handle image upload
-  const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleImageUpload = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0]
     if (file) {
       const preview = URL.createObjectURL(file)
       setUploadedImage({ file, preview })
     }
-  }
+  }, [])
 
   // Handle add to calendar
   const handleAddToCalendar = (session: Session) => {
@@ -646,7 +666,7 @@ export default function Home() {
           </Button>
           <Input
             value={inputMessage}
-            onChange={(e) => setInputMessage(e.target.value)}
+            onChange={handleInputChange}
             onKeyPress={(e) => e.key === 'Enter' && !e.shiftKey && handleSendMessage()}
             placeholder="Ask about sessions, speakers, venues..."
             disabled={isLoading}
@@ -676,7 +696,7 @@ export default function Home() {
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
           <Input
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={handleSearchChange}
             placeholder="Search sessions, speakers..."
             className="pl-10"
           />
@@ -1132,7 +1152,7 @@ export default function Home() {
             {editingNote ? (
               <Input
                 value={editNoteTitle}
-                onChange={(e) => setEditNoteTitle(e.target.value)}
+                onChange={handleNoteTitleChange}
                 className="font-semibold"
               />
             ) : (
@@ -1148,7 +1168,7 @@ export default function Home() {
           {editingNote ? (
             <Textarea
               value={editNoteContent}
-              onChange={(e) => setEditNoteContent(e.target.value)}
+              onChange={handleNoteContentChange}
               rows={10}
               className="w-full"
             />
